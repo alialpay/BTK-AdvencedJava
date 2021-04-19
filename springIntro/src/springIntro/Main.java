@@ -1,11 +1,14 @@
 package springIntro;
 
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		CustomerManager manager = new CustomerManager(new MySqlCustomerDal());
+		
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+ 
+		CustomerManager manager = new CustomerManager(context.getBean("database",ICustomerDal.class));
 		manager.add();
 	}
 
