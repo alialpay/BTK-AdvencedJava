@@ -7,8 +7,8 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean id="database" class="springIntro.CustomerDal">
-	
+	<bean id="database" class="springIntro.MsSqlCustomerDal">
+		<property name="connectionString" value="--Sql Server string--"></property>
 	</bean>
 	<bean id="service" class="springIntro.CustomerManager">
 <!-- 		<constructor-arg ref="database"/> -->
