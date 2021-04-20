@@ -7,11 +7,12 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean id="database" class="springIntro.MsSqlCustomerDal">
+	<bean id="database" class="springIntro.CustomerDal">
 	
 	</bean>
 	<bean id="service" class="springIntro.CustomerManager">
-		<constructor-arg ref="database"/>
+<!-- 		<constructor-arg ref="database"/> -->
+			<property name="customerDal" ref="database"></property>
 	</bean>
 </beans>
 
