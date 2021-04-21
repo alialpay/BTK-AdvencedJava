@@ -1,6 +1,5 @@
 package com.springdemo;
 
-import org.springframework.stereotype.Component;
 
 public class MsSqlCustomerDal implements ICustomerDal {
 

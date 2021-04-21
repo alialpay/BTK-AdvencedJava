@@ -2,7 +2,7 @@ package com.springdemo;
 
 import org.springframework.stereotype.Component;
 
-@Component("database")
+
 
 public class MySqlCustomerDal implements ICustomerDal {
 
