@@ -3,8 +3,12 @@ package com.hibernateDemo;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		//Koþullu sorgular
+		//Order By
+		//Group By
+		//Insert
+		//Update
+		//Delete
 	}
 
 }
