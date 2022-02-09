@@ -6,10 +6,12 @@ import javax.persistence.EntityManager;
 
 import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.javacourse.project.hibernateAndJpa.Entities.City;
 
+@Repository
 public class HibernateCityDao implements CityDao {
 		
 	private EntityManager entityManager;
