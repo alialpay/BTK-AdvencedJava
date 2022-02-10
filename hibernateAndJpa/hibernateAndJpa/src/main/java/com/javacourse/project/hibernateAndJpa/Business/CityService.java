@@ -9,4 +9,5 @@ public interface CityService {
 	void add(City city);
 	void update(City city);
 	void delete(City city);
+	City getById(int id);
 }

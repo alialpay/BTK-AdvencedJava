@@ -28,22 +28,26 @@ public class CityManager implements CityService {
 	@Override
 	@Transactional
 	public void add(City city) {
-		// TODO Auto-generated method stub
-		
+		this.cityDao.add(city);
 	}
 
 	@Override
 	@Transactional
 	public void update(City city) {
-		// TODO Auto-generated method stub
-		
+		this.cityDao.update(city);
 	}
 
 	@Override
 	@Transactional
 	public void delete(City city) {
-		// TODO Auto-generated method stub
+		this.cityDao.delete(city);
 		
+	}
+
+	@Override
+	@Transactional
+	public City getById(int id) {
+		return this.cityDao.getById(id);
 	}
 
 }
